@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".MealDetails">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/background_header">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:justifyContent="space_between"
+            app:alignItems="center">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:alignItems="center">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo"
+                    android:layout_marginEnd="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GhostChef"
+                    android:textSize="26sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppinssemibold"/>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <ImageButton
+                android:id="@+id/buttonOpenDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_primary_button"
+                android:padding="8dp"
+                android:src="@drawable/icon_sparkles"/>
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ImageViewMealImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:src="@drawable/meal_image_0"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView
+                        android:id="@+id/TextViewMealTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:includeFontPadding="false"
+                        android:text="Protein Packed Burrito"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TextViewMealDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:includeFontPadding="false"
+                        android:text="The Protein Packed Burrito is a delicious and nutritious meal that is filled with high-protein ingredients to fuel your body."
+                        android:textColor="@color/neutral"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:includeFontPadding="false"
+                        android:text="Ingredients"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TextViewMealIngredients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:includeFontPadding="false"
+                        android:text="Scrambled tofu\nFresh jalapeño peppers\nFresh greens\nAvocado\nZingy hot sauceBlack beans (optional)\nSriracha (optional)"
+                        android:textColor="@color/neutral"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:includeFontPadding="false"
+                        android:text="Instructions"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TextViewMealInstructions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="84dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:includeFontPadding="false"
+                        android:text="Prepare the scrambled tofu: In a non-stick pan, crumble the tofu and cook it over medium heat until it resembles scrambled eggs. Season with salt and pepper to taste.\n\nAdd the fresh jalapeño peppers: Finely chop the fresh jalapeño peppers and add them to the pan with the scrambled tofu. Cook for a few minutes until the peppers are softened.\n\nPrepare the fresh greens: Wash and chop the fresh greens of your choice, such as lettuce or spinach.\n\nSlice the avocado: Cut the avocado in half, remove the pit, and slice it into thin pieces.\n\nWarm the tortilla: Heat a tortilla in a dry pan or microwave until it is warm and pliable.\n\nAssemble the burrito: Lay the warm tortilla flat and spread a generous amount of the scrambled tofu and jalapeño mixture onto the center. Top it with fresh greens, sliced avocado, and a drizzle of zingy hot sauce. If desired, you can also add black beans or a drizzle of Sriracha for extra flavor and protein.Roll the burrito: Fold the sides of the tortilla over the filling, then roll it tightly from one end to the other, creating a burrito shape.\n\nServe and enjoy: Cut the burrito in half if desired and serve it immediately. Enjoy your Protein Packed Burrito as a satisfying and nutritious meal!"
+                        android:textColor="@color/neutral"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonGenerateMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="16dp"
+            android:text="Generate Meal"
+            android:textAllCaps="false"
+            android:includeFontPadding="false"
+            android:drawableEnd="@drawable/icon_magic_wand"
+            android:drawablePadding="8dp"
+            android:background="@drawable/background_primary_button"
+            android:theme="@style/buttonPrimary"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.GhostChef" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="Theme.GhostChef" parent="Base.Theme.GhostChef" />
+    <style name="buttonPrimary" parent="android:style/Widget.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:fontFamily">@font/poppinsregular</item>
+        <item name="android:background">@drawable/background_primary_button</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>

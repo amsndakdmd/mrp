@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/background_header">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:justifyContent="space_between"
+            app:alignItems="center">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:alignItems="center">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo"
+                    android:layout_marginEnd="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GhostChef"
+                    android:textSize="26sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppinssemibold"/>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <ImageButton
+                android:id="@+id/buttonOpenDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_primary_button"
+                android:padding="8dp"
+                android:src="@drawable/icon_sparkles"/>
+
+        </com.google.android.flexbox.FlexboxLayout>
+    </FrameLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:alignItems="center"
+        app:justifyContent="center"
+        app:flexDirection="column">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="280dp"
+                android:text="Explore Endless Culinary Adventures!"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinssemibold"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="280dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textColor="@color/neutral"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/poppinsregular"
+                android:includeFontPadding="false"
+                android:text="With GhostChef’s Recipe Roulette, say goodbye to mealtime monotony and foods that are stopping you from reaching your full potential."/>
+
+            <Button
+                android:id="@+id/buttonGetStarted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:includeFontPadding="false"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/icon_arrow_right"
+                android:drawablePadding="8dp"
+                android:background="@drawable/background_primary_button"
+                android:theme="@style/buttonPrimary"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>
